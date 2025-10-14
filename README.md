@@ -7,6 +7,7 @@ O projeto faz uso de sensores e atuadores conectados via MQTT, permitindo monito
 ---
 
 ##💡 Ideia do Projeto 
+
 O projeto Smart Waste Management System (SWMS) é uma solução de Cidades Inteligentes voltada à gestão automatizada de resíduos urbanos.
 A proposta é monitorar, em tempo real, o nível de preenchimento de lixeiras inteligentes espalhadas pela cidade e otimizar o processo de coleta, reduzindo custos e evitando transbordamentos.
 O sistema será composto por duas estações embarcadas simuladas (ESP32 ou Arduino):

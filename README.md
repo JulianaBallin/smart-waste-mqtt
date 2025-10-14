@@ -3,6 +3,7 @@
 ## 💡 Overview  
 O Smart Waste Management System é uma solução de Cidades Inteligentes que utiliza sistemas embarcados para monitorar e controlar o nível de resíduos urbanos.  
 O projeto faz uso de sensores e atuadores conectados via MQTT, permitindo monitoramento em tempo real, controle automático e notificações de emergência.
+
 ---
 
 ##💡 Ideia do Projeto
@@ -16,6 +17,7 @@ O sistema será composto por duas estações embarcadas simuladas (ESP32 ou Ardu
 As estações enviam dados via MQTT para um broker central.
 Um servidor Node-RED atuará como painel de controle e interface com o banco de dados (simulado via SQLite ou Firebase).
 O dashboard exibirá níveis de lixo, status de temperatura/gases, histórico e alarmes (com notificações configuráveis).
+
 ---
 
 # ⚙️ Tecnologias Utilizadas  
@@ -39,6 +41,7 @@ C[Lixeira 2 - ESP32] -->|MQTT| B
 B --> D[Node-RED Dashboard]  
 D --> E[(SQLite DB)]  
 D --> F[Alerta / Telegram / E-mail]  
+
 ---
 
 # 🧠 Funcionalidades  
@@ -48,6 +51,7 @@ D --> F[Alerta / Telegram / E-mail]
 - Dashboard em Node-RED com gráficos de temperatura, nível e estado das lixeiras  
 - Histórico armazenado no banco de dados  
 - Configuração de limites de alerta personalizáveis  
+
 ---
 
 # 🧪 Simulação  
@@ -58,6 +62,7 @@ Cada dispositivo publica em tópicos MQTT distintos:
 |--------------|-------------|--------------------|  
 | Lixeira 1 | swms/lixeira1/data | Ultrassônico, MQ-2, LED |  
 | Lixeira 2 | swms/lixeira2/data | DHT22, Célula de carga, Servo |  
+
 ---
 
 # 🧰 Estrutura do Repositório  
